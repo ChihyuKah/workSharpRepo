@@ -1,0 +1,55 @@
+﻿<h3>WeatherData</h3>
+@* 13
+if there's an error string show that errorstring:*@
+@* @ = razor syntax to write C# code *@
+
+@*@if (string.IsNullOrWhiteSpace(errorString) == false)
+{
+    <div class="h2">@errorString</div>
+}*@
+
+@* 14
+else if there is no error string but the forecast is null say: loading
+You could also put some kind of gif to indicate that it's loading*@
+
+
+@*else if (forecast is null)
+{
+    <div class="h4">Loading...</div>
+}*@
+
+@* 15
+Here we will add one more else that
+will indicate that there is 
+no error string and 
+there is data in the forecast
+For this we use a table with a little bit of styling*@
+
+@*else
+{
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>Date</th>
+            <th>Weather</th>
+            <th>Low</th>
+            <th>High</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var w in forecast.Consolidated_weather)
+        {
+        <tr>
+            <td>@w.applicable_date</td>
+            <td>@w.weather_state_name</td>
+            <td>@w.min_temp</td>
+            <td>@w.max_temp</td>
+        </tr>
+        }
+    </tbody>
+</table>
+}*@
+
+@code {    
+    
+}

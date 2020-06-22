@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "sfmGqN/Ae4CI4+XkNYNsuxp+zYp5ad1DmRM20fxf5y0lLBKDYgfM/aTx9LmB0bGCWtOA9c0Y0H+x7nA/g3jTcQ==",
+  "success": true,
+  "projectFilePath": "/home/chihyu/Desktop/workshop/HTTPClientDemoAppClean/HttpClientDemo/HttpClientDemo.csproj",
+  "expectedPackageFiles": [
+    "/home/chihyu/.nuget/packages/system.net.http.json/3.2.1/system.net.http.json.3.2.1.nupkg.sha512",
+    "/home/chihyu/.nuget/packages/system.text.json/4.7.2/system.text.json.4.7.2.nupkg.sha512"
+  ],
+  "logs": []
+}
